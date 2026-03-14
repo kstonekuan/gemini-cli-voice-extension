@@ -12,10 +12,16 @@
 		"commands",
 		"gemini-extension.json"
 	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kstonekuan/gemini-cli-voice-extension"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"dependencies": {
 		"@google/genai": "^1.45.0",
 		"@kstonekuan/audio-capture": "link:audio-capture",
-		"@kstonekuan/gemini-voice": "link:",
 		"ink": "^6.8.0",
 		"ink-spinner": "^5.0.0",
 		"react": "^19.2.4",

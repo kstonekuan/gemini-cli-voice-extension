@@ -10,5 +10,12 @@
 	],
 	"os": [
 		"win32"
-	]
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kstonekuan/gemini-cli-voice-extension"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

@@ -24,13 +24,20 @@
 		"@kstonekuan/audio-capture-linux-x64-gnu": "0.0.1",
 		"@kstonekuan/audio-capture-win32-x64-msvc": "0.0.1"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kstonekuan/gemini-cli-voice-extension"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"devDependencies": {
 		"@napi-rs/cli": "^3.5.1"
 	},
 	"scripts": {
 		"build": "napi build --platform --release",
 		"artifacts": "napi artifacts",
-		"prepublishOnly": "napi prepublish -t npm",
+		"prepublishOnly": "napi prepublish -t npm --no-gh-release",
 		"version": "napi version"
 	}
 }

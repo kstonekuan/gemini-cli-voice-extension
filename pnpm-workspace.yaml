@@ -1,5 +1,6 @@
 onlyBuiltDependencies:
   - esbuild
+  - protobufjs
 
 overrides:
   '@kstonekuan/gemini-voice': 'link:'
