@@ -1,0 +1,5 @@
+{
+	"name": "gemini-voice",
+	"version": "0.0.1",
+	"description": "Voice input for Gemini CLI via the Gemini Live API"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "@kstonekuan/audio-capture-linux-x64-gnu",
+	"version": "0.0.1",
+	"cpu": [
+		"x64"
+	],
+	"main": "audio-capture.linux-x64-gnu.node",
+	"files": [
+		"audio-capture.linux-x64-gnu.node"
+	],
+	"os": [
+		"linux"
+	],
+	"libc": [
+		"glibc"
+	]
+}

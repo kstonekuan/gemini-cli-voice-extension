@@ -1,0 +1,7 @@
+description = "Speak into your microphone and use the transcript as your next message"
+
+prompt = """
+The user provided the following voice input. First, quote the transcription back to the user, then process it as you would any typed input.
+
+!{gemini-voice transcribe --quiet}
+"""

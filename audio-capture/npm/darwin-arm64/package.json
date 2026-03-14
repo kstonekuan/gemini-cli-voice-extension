@@ -1,0 +1,14 @@
+{
+	"name": "@kstonekuan/audio-capture-darwin-arm64",
+	"version": "0.0.1",
+	"cpu": [
+		"arm64"
+	],
+	"main": "audio-capture.darwin-arm64.node",
+	"files": [
+		"audio-capture.darwin-arm64.node"
+	],
+	"os": [
+		"darwin"
+	]
+}

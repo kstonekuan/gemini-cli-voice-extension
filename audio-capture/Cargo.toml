@@ -1,0 +1,26 @@
+
+[package]
+name = "audio_capture"
+version = "0.0.1"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+napi-derive = "3.5.2"
+cpal = "0.17.3"
+ringbuf = "0.4.8"
+
+[dependencies.napi]
+version = "3.8.3"
+features = ["napi6"]
+
+[build-dependencies]
+napi-build = "2.3.1"
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1
+panic = "abort"
