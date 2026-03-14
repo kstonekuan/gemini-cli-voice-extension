@@ -15,8 +15,8 @@ importers:
         specifier: ^1.45.0
         version: 1.45.0
       '@kstonekuan/audio-capture':
-        specifier: link:audio-capture
-        version: link:audio-capture
+        specifier: 0.0.1
+        version: 0.0.1
       ink:
         specifier: ^6.8.0
         version: 6.8.0(@types/react@19.2.14)(react@19.2.4)
@@ -54,6 +54,25 @@ importers:
       typescript:
         specifier: 5.9.3
         version: 5.9.3
+
+  audio-capture:
+    devDependencies:
+      '@napi-rs/cli':
+        specifier: ^3.5.1
+        version: 3.5.1(@emnapi/runtime@1.9.0)(@types/node@25.5.0)
+    optionalDependencies:
+      '@kstonekuan/audio-capture-darwin-arm64':
+        specifier: 0.0.1
+        version: 0.0.1
+      '@kstonekuan/audio-capture-darwin-x64':
+        specifier: 0.0.1
+        version: 0.0.1
+      '@kstonekuan/audio-capture-linux-x64-gnu':
+        specifier: 0.0.1
+        version: 0.0.1
+      '@kstonekuan/audio-capture-win32-x64-msvc':
+        specifier: 0.0.1
+        version: 0.0.1
 
 packages:
 
@@ -425,6 +444,29 @@ packages:
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
+
+  '@kstonekuan/audio-capture-darwin-arm64@0.0.1':
+    resolution: {integrity: sha512-ooH9xCJ1II5pi+3D4c8qQU6cYOAl3o6pzMyKTtvEAJ8M1LmhbditAAjCx9mzFe+Y9pICriSeJN/gm9O+/dGQEw==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@kstonekuan/audio-capture-darwin-x64@0.0.1':
+    resolution: {integrity: sha512-HDm8Z5An7vUuyGbK+RCBb7vYhRG42M8bg0X8HLYaFe4kEQHU4qeqm05YeSNj0MSKIQfxKrcabBeUq+N+dY5Ayw==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@kstonekuan/audio-capture-linux-x64-gnu@0.0.1':
+    resolution: {integrity: sha512-WeXurnhyyiiGoJPVTMBncTCC1VhOu7/fHXfU8PTjQ3k0wSp++GGpDSAqmzWaJ9pkDiieBhSfeRFocPMjY36WVQ==}
+    cpu: [x64]
+    os: [linux]
+
+  '@kstonekuan/audio-capture-win32-x64-msvc@0.0.1':
+    resolution: {integrity: sha512-TxUW1j9czovZeE9mA1WP3n1mob54G6Rfy6II94YjGftwCK82TOkMQeBKzjBV79U1w/Tz53u6EMotW8BcTepG8Q==}
+    cpu: [x64]
+    os: [win32]
+
+  '@kstonekuan/audio-capture@0.0.1':
+    resolution: {integrity: sha512-y3zbVNeznnkPlgMUgF915jJ/v+AbB9NV/+DeVHkk04h7b8GFT7CoZ/ZOt9Qbh8IlDCHtMwcjCMTXwAv80S7g+Q==}
 
   '@napi-rs/cli@3.5.1':
     resolution: {integrity: sha512-XBfLQRDcB3qhu6bazdMJsecWW55kR85l5/k0af9BIBELXQSsCFU0fzug7PX8eQp6vVdm7W/U3z6uP5WmITB2Gw==}
@@ -1673,6 +1715,25 @@ snapshots:
       strip-ansi-cjs: strip-ansi@6.0.1
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
+
+  '@kstonekuan/audio-capture-darwin-arm64@0.0.1':
+    optional: true
+
+  '@kstonekuan/audio-capture-darwin-x64@0.0.1':
+    optional: true
+
+  '@kstonekuan/audio-capture-linux-x64-gnu@0.0.1':
+    optional: true
+
+  '@kstonekuan/audio-capture-win32-x64-msvc@0.0.1':
+    optional: true
+
+  '@kstonekuan/audio-capture@0.0.1':
+    optionalDependencies:
+      '@kstonekuan/audio-capture-darwin-arm64': 0.0.1
+      '@kstonekuan/audio-capture-darwin-x64': 0.0.1
+      '@kstonekuan/audio-capture-linux-x64-gnu': 0.0.1
+      '@kstonekuan/audio-capture-win32-x64-msvc': 0.0.1
 
   '@napi-rs/cli@3.5.1(@emnapi/runtime@1.9.0)(@types/node@25.5.0)':
     dependencies:

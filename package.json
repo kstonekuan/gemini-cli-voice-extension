@@ -21,7 +21,7 @@
 	},
 	"dependencies": {
 		"@google/genai": "^1.45.0",
-		"@kstonekuan/audio-capture": "link:audio-capture",
+		"@kstonekuan/audio-capture": "0.0.1",
 		"ink": "^6.8.0",
 		"ink-spinner": "^5.0.0",
 		"react": "^19.2.4",
