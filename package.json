@@ -21,7 +21,7 @@
 	},
 	"dependencies": {
 		"@google/genai": "^1.45.0",
-		"@kstonekuan/audio-capture": "0.0.2",
+		"@kstonekuan/audio-capture": "^0.0.2",
 		"ink": "^6.8.0",
 		"ink-spinner": "^5.0.0",
 		"react": "^19.2.4",
@@ -30,7 +30,6 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.4.7",
-		"@napi-rs/cli": "^3.5.1",
 		"@types/node": "25.5.0",
 		"@types/react": "^19.2.14",
 		"@types/yargs": "^17.0.35",
@@ -38,15 +37,10 @@
 		"typescript": "5.9.3"
 	},
 	"scripts": {
-		"build:audio": "cd audio-capture && napi build --platform --release",
-		"build:ts": "tsc",
-		"build": "pnpm run build:audio && pnpm run build:ts",
-		"dev": "pnpm run build:audio && tsx src/cli.ts",
+		"build": "tsc",
+		"dev": "tsx src/cli.ts",
 		"lint": "biome check --write",
 		"typecheck": "tsc --noEmit",
-		"cargo:clippy": "cargo clippy --manifest-path audio-capture/Cargo.toml --all-targets --all-features",
-		"cargo:fmt": "cargo fmt --manifest-path audio-capture/Cargo.toml",
-		"cargo": "pnpm run cargo:clippy && pnpm run cargo:fmt",
-		"check": "pnpm run lint && pnpm run typecheck && pnpm run cargo"
+		"check": "pnpm run lint && pnpm run typecheck"
 	}
 }

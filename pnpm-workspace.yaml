@@ -1,7 +1,3 @@
-packages:
-  - '.'
-  - 'audio-capture'
-
 onlyBuiltDependencies:
   - esbuild
   - protobufjs
