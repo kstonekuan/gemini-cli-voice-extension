@@ -6,6 +6,7 @@ import { devicesCommand } from "./commands/devices.js";
 import { transcribeCommand } from "./commands/transcribe.js";
 
 yargs(hideBin(process.argv))
+	.scriptName("gemini-voice")
 	.command(authCommand)
 	.command(transcribeCommand)
 	.command(devicesCommand)
